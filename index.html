@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,user-scalable=no" />
+  <title>2048</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:800" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="horizontalbox">
+    <div class="scorebox">
+      <h2>Score</h2>
+      <h3 id="score"></h3>
+    </div>
+    <div class="scorebox">
+      <h2>Best</h2>
+      <h3 id="hiscore"></h3>
+    </div>
+  </div>
+
+  <div class="horizontalbox">
+    <button id="restart">Restart</button>
+  </div>
+
+  <table id="gamefield">
+  </table>
+
+  <div class="modal" id="gameOverDialog">
+    <h1 class="animate pop">Game Over</h1>
+    <p>Your Score: <span id="gameOverScore"></span></p>
+    <button onclick="resetGame()">Try Again</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
